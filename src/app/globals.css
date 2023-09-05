@@ -1,0 +1,61 @@
+:root{
+    --bg: white;
+    --textColor: black;
+    --softBg: #f0f0f0;
+    --safeTextColor: #626262; 
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--textColor)
+}
+.wrapper{
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    margin: 0 40px;
+    padding: 0 80px;
+}
+
+@media screen and (max-width: 1536px){
+    .wrapper{
+        max-width: 1366px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .wrapper{
+        max-width: 1024px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .wrapper{
+        max-width: 760px;
+        padding: 0 40px;
+    }
+}
+@media screen and (max-width: 768px){
+    .wrapper{
+        max-width: 640px;
+        padding: 0 40px;
+    }
+}
+@media screen and (max-width: 640px){
+    .wrapper{
+        max-width: 475px;
+        padding: 0 40px;
+    }
+}
